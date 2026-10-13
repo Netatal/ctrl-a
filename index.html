@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ctrl A Animation Index</title>
+<meta name="description" content="Ctrl A — a hand-animated series on the principles of design. Final project at Bezalel Academy of Arts and Design.">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  figure { margin: 0; }
+
+  body {
+    background: #000000;
+    padding: 6px;
+    padding-top: calc(6px + env(safe-area-inset-top, 0px));
+  }
+
+  /* 24 studies = a complete 4 x 6 grid, no orphan row */
+  .sheet {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  /* 2 x 12 on phones — still a complete grid, and the tiles stay readable */
+  @media (max-width: 640px) {
+    .sheet { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+
+  .cell {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    max-width: 100%;
+    overflow: hidden;
+    background: #000000;
+  }
+
+  .cell video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .about-link {
+    padding: 110px 16px 0;
+    text-align: center;
+  }
+
+  .about-link a {
+    color: #ffffff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .about-link a:hover { color: #efb700; }
+  .about-link a:focus-visible { outline: 2px solid #efb700; outline-offset: 4px; }
+
+  .colophon {
+    padding: 130px 16px calc(56px + env(safe-area-inset-bottom, 0px));
+    display: flex;
+    justify-content: center;
+  }
+
+  .colophon video {
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+    display: block;
+  }
+
+  .sr {
+    position: absolute; width: 1px; height: 1px;
+    padding: 0; margin: -1px; overflow: hidden;
+    clip-path: inset(50%); white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+
+<main class="sheet">
+
+  <figure class="cell">
+    <video src="media/alignment.mp4" poster="media/posters/alignment.webp" muted loop playsinline preload="none" aria-label="Alignment"></video>
+    <figcaption class="sr">Alignment</figcaption>
+  </figure>
+
+  <figure class="cell">
+    <video src="media/pattern.mp4" poster="media/posters/pattern.webp" muted loop playsinline preload="none" aria-label="Pattern"></video>
+    <figcaption class="sr">Pattern</figcaption>
+  </figure>
+
+  <figure class="cell">
+    <video src="media/scale.mp4" poster="media/posters/scale.webp" muted loop playsinline preload="none" aria-label="Scale"></video>
+    <figcaption class="sr">Scale</figcaption>
+  </figure>
+
+  <figure class="cell">
+    <video src="media/dark.mp4" poster="media/posters/dark.webp" muted loop playsinline preload="none" aria-label="Dark"></video>
+    <figcaption class="sr">Dark</figcaption>
+  </figure>
+
+  <figure class="cell">
+    <video src="media/repetition.mp4" poster="media/posters/repetition.webp" muted loop playsinline preload="none" aria-label="Repetition"></video>
+    <figcaption class="sr">Repetition</figcaption>
+  </figure>
+
+  <figure class="cell">
+    <video src="media/color.mp4" poster="media/posters/color.webp" muted loop playsinline preload="none" aria-label="Color"></video>
+    <figcaption class="sr">Color</figcaption>
+  </figure>
+
+  <figure class="cell">
+    <video src="media/white-space.mp4" poster="media/posters/white-space.webp" muted loop playsinline preload="none" aria-label="White space"></video>
+    <figcaption class="sr">White space</figcaption>
+  </figure>
+
+  <figure class="cell">
+    <video src="media/emphasis.mp4" poster="media/posters/emphasis.webp" muted loop playsinline preload="none" aria-label="Emphasis"></video>
+    <figcaption class="sr">Emphasis</figcaption>
+  </figure>
+
+  <figure class="cell">
+    <video src="media/proximity.mp4" poster="media/posters/proximity.webp" muted loop playsinline preload="none" aria-label="Proximity"></video>
+    <figcaption class="sr">Proximity</figcaption>
+  </figure>
+
+  <figure class="cell">
+    <video src="media/shade.mp4" poster="media/posters/shade.webp" muted loop playsinline preload="none" aria-label="Shade"></video>
+    <figcaption class="sr">Shade</figcaption>
+  </figure>
+
+  <figure class="cell">
+    <video src="media/hierarchy.mp4" poster="media/posters/hierarchy.webp" muted loop playsinline preload="none" aria-label="Hierarchy"></video>
+    <figcaption class="sr">Hierarchy</figcaption>
+  </figure>
+
+  <figure class="cell">
+    <video src="media/contrast.mp4" poster="media/posters/contrast.webp" muted loop playsinline preload="none" aria-label="Contrast"></video>
+    <figcaption class="sr">Contrast</figcaption>
+  </figure>
+
+  <figure class="cell">
+    <video src="media/opacity.mp4" poster="media/posters/opacity.webp" muted loop playsinline preload="none" aria-label="Opacity"></video>
+    <figcaption class="sr">Opacity</figcaption>
+  </figure>
+
+  <figure class="cell">
+    <video src="media/variety.mp4" poster="media/posters/variety.webp" muted loop playsinline preload="none" aria-label="Variety"></video>
+    <figcaption class="sr">Variety</figcaption>
+  </figure>
+
+  <figure class="cell">
+    <video src="media/order.mp4" poster="media/posters/order.webp" muted loop playsinline preload="none" aria-label="Order"></video>
+    <figcaption class="sr">Order</figcaption>
+  </figure>
+
+  <figure class="cell">
+    <video src="media/perspective.mp4" poster="media/posters/perspective.webp" muted loop playsinline preload="none" aria-label="Perspective"></video>
+    <figcaption class="sr">Perspective</figcaption>
+  </figure>
+
+  <figure class="cell">
+    <video src="media/composition.mp4" poster="media/posters/composition.webp" muted loop playsinline preload="none" aria-label="Composition"></video>
+    <figcaption class="sr">Composition</figcaption>
+  </figure>
+
+  <figure class="cell">
+    <video src="media/loading-screen.mp4" poster="media/posters/loading-screen.webp" muted loop playsinline preload="none" aria-label="Loading screen"></video>
+    <figcaption class="sr">Loading screen</figcaption>
+  </figure>
+
+  <figure class="cell">
+    <video src="media/symmetry.mp4" poster="media/posters/symmetry.webp" muted loop playsinline preload="none" aria-label="Symmetry"></video>
+    <figcaption class="sr">Symmetry</figcaption>
+  </figure>
+
+  <figure class="cell">
+    <video src="media/photo-icon.mp4" poster="media/posters/photo-icon.webp" muted loop playsinline preload="none" aria-label="Photo icon"></video>
+    <figcaption class="sr">Photo icon</figcaption>
+  </figure>
+
+  <figure class="cell">
+    <video src="media/off-the-grid.mp4" poster="media/posters/off-the-grid.webp" muted loop playsinline preload="none" aria-label="Off the grid"></video>
+    <figcaption class="sr">Off the grid</figcaption>
+  </figure>
+
+  <figure class="cell">
+    <video src="media/balance.mp4" poster="media/posters/balance.webp" muted loop playsinline preload="none" aria-label="Balance"></video>
+    <figcaption class="sr">Balance</figcaption>
+  </figure>
+
+  <figure class="cell">
+    <video src="media/proportion.mp4" poster="media/posters/proportion.webp" muted loop playsinline preload="none" aria-label="Proportion"></video>
+    <figcaption class="sr">Proportion</figcaption>
+  </figure>
+
+  <figure class="cell">
+    <video src="media/unity.mp4" poster="media/posters/unity.webp" muted loop playsinline preload="none" aria-label="Unity"></video>
+    <figcaption class="sr">Unity</figcaption>
+  </figure>
+
+</main>
+
+<nav class="about-link"><a href="about.html">About</a></nav>
+
+<footer class="colophon">
+  <video src="media/bezalel-logo.mp4" poster="media/posters/bezalel-logo.webp" muted loop playsinline preload="none" aria-label="Bezalel Academy of Arts and Design, Jerusalem"></video>
+</footer>
+
+<script>
+  // Play only what is on screen: two dozen loops running at once would
+  // saturate the connection and the decoder.
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        const v = e.target;
+        if (e.isIntersecting) {
+          if (v.preload === 'none') v.preload = 'auto';
+          const p = v.play();
+          if (p) p.catch(() => {});
+        } else {
+          v.pause();
+        }
+      }
+    }, { threshold: 0.25, rootMargin: '200px 0px' });
+
+    document.querySelectorAll('video').forEach((v) => io.observe(v));
+  }
+</script>
+
+</body>
+</html>

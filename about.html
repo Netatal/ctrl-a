@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ctrl A — About</title>
+<meta name="description" content="Ctrl A — a hand-animated series on the principles of design. Final project at Bezalel Academy of Arts and Design.">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+
+  html { height: 100%; }
+
+  body {
+    min-height: 100%;
+    background: #000000;
+    color: #ffffff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+
+  .about {
+    flex: 1 0 auto;
+    margin-left: 24.5%;
+    padding: 84px 16px 64px 0;
+  }
+
+  .head {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .back {
+    flex: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #efb700;
+    color: #000000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .back:hover { background: #ffd033; }
+  .back:focus-visible { outline: 2px solid #ffffff; outline-offset: 3px; }
+
+  .head h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .copy {
+    margin-left: 54px;
+    padding-top: 80px;
+    max-width: 360px;
+  }
+
+  .copy p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .colophon {
+    flex: none;
+    padding: 40px 16px calc(40px + env(safe-area-inset-bottom, 0px));
+    display: flex;
+    justify-content: center;
+  }
+
+  .colophon video {
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+    display: block;
+  }
+
+  @media (max-width: 640px) {
+    .about { margin-left: 0; padding: 48px 16px 48px; }
+    .copy { margin-left: 54px; padding-top: 56px; }
+  }
+</style>
+</head>
+<body>
+
+<main class="about">
+  <div class="head">
+    <a class="back" href="index.html" aria-label="Back to the animations">
+      <svg width="7" height="11" viewBox="0 0 7 11" fill="none" aria-hidden="true">
+        <path d="M5.5 1 1.5 5.5l4 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </a>
+    <h1>Ctrl A</h1>
+  </div>
+
+  <div class="copy">
+    <p>Let's see how aesthetic elements are reflected in our everyday lives and how it all relates to the ever-present digital world.</p>
+  </div>
+</main>
+
+<footer class="colophon">
+  <video src="media/bezalel-logo.mp4" poster="media/posters/bezalel-logo.webp" muted loop playsinline autoplay preload="auto" aria-label="Bezalel Academy of Arts and Design, Jerusalem"></video>
+</footer>
+
+</body>
+</html>
